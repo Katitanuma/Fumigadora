@@ -25,11 +25,8 @@ def home(request):
 		'contacto':contacto
 	}
 
-	return render(request,'home.html',data)
+	return render(request,'base1.html',data)
 
-def mision(request):
-	mision = Mision.objects.all()
-	return render(request,'mision.html',{'mision':mision})
 
 def envio(request, *args, **kwargs):
 	if request.method == 'POST':

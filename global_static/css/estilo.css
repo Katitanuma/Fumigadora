@@ -11,28 +11,21 @@ a{
 }
 
 .logo{
-  width:15.2%;
+  width:100%;
   height:197px;
   border-radius:100%;
-  margin-right: 10px;
   box-shadow: 2px 4px 15px rgba(0,0,0,.80)
 }
 
-#clientes,#mision,#servicios{
+#clientesl,#mision,#servicios,#sevf,#c,#formc,#formd{
    background-image: url("../img/a.jpg");
 }
 
-#contacto{
-  background-image: url("../img/fn4.png");
-  opacity: 0.3;
-} 
-
 .logo1{
-  width:15.2%;
+  width:100%;
   height:197px;
-  margin-top: 150px;
+  margin-top: 50px;
   border-radius:100%;
-  margin-right: 10px;
   box-shadow: 2px 4px 15px rgba(0,0,0,.80)
 }
 
@@ -40,15 +33,15 @@ a{
   height: 30px;
 }
 
-.publicidad{
+#publicidad{
 /*   background: #036C8F; */
-  height: 400px;
-  background-image: url("../img/Fumigar.jpg");
+  height: 463px;
+  background-image: url("../img/fum.jpg");
 }
 
-.clientepu{
+#clientepu{
 /*   background: #036C8F; */
-  height: 452px;
+  height: 463px;
   background-image: url("../img/cliente.jpg");
 }
 
@@ -190,14 +183,70 @@ a{
 
 
 
-
+@media screen and (max-width: 980px){
+    .hero { 
+      width: 980px; 
+    }  
+    #imageService{
+      display: block;
+      width:100px;
+      height:89px;
+    }  
+     #ser{
+      width: 40%;
+      display: inline-block
+    }
+}
 
 @media screen and (min-width: 980px){
-    .hero { width: 980px; }    
+    .hero { width: 980px; }  
+    #imageService{
+      display: inline-block;
+      width:100px;
+      height:89px;
+    }  
+
 }
+
+
+@media screen and (min-width: 840px){
+    .hero { width: 840px; }  
+    #imageService{
+      display: inline-block;
+      width:100px;
+      height:99px;
+    }  
+}
+
+
 @media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
+    .hero h1 { font-size: 4em; } 
+    .letras{
+      font-size: 4em;
+    }   
 }
+
+@media screen and (min-width: 640px){
+    .hero h1 { font-size: 3em;}  
+    .letras{
+      font-size: 16pt;
+    } 
+}
+
+@media screen and (max-width: 550px){
+    .hero h1 { font-size: 2em;}  
+    .letras{
+      font-size: 14pt;
+    } 
+}
+
+@media screen and (max-width: 440px){
+    .hero h1 { font-size: 2em; } 
+    .letras{
+      font-size: 10pt;
+    }    
+}
+
 
 
 
