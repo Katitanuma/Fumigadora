@@ -1,0 +1,57 @@
+
+.side {
+  position: absolute;
+  width: 20vw;
+  height: -1000vh;
+  top: 1000px;
+  bottom: 0;
+  z-index: 8;
+}
+.side.left {
+  left: 800px;
+}
+.side.left:hover ~ .wrapper .front {
+  transform: matrix3d(0.94, 0, 0.34, -0.0002, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(-10px);
+}
+.side.left:hover ~ .wrapper .back {
+  transform: matrix3d(0.94, 0, 0.34, -0.00025, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(30px);
+}
+.side.right {
+  right: 0;
+}
+.side.right:hover ~ .wrapper .front {
+  transform: matrix3d(0.94, 0, 0.34, 0.0002, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1) translateX(30px);
+}
+.side.right:hover ~ .wrapper .back {
+  transform: matrix3d(0.94, 0, 0.34, 0.0005, 0, 1, 0, 0, -0.34, 0, 0.94, 0, 1, 0, 10, 1.1) translateX(-100px);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image {
+  perspective: 200px;
+  transition: all .2s ease;  
+  border-radius: 100%;
+  height: 410px;
+  width: 420px;
+  background-size: cover;
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.8);
+}
+
+.front {
+  margin-right: 50px;
+  background-image: url("../img/i1.jpg");
+  z-index: 1;
+}
+
+.back {
+  margin-left: 100px;
+  margin-top: -240px;
+  background-image: url("../img/i2.jpg");
+  background-position: bottom;
+}
