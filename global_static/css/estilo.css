@@ -1,0 +1,203 @@
+body{
+  position:relative;
+}
+
+a{
+  height: 50px;
+  color:#FFFFFF;
+  border-radius: 3px;
+  font-family: "BebasNeueRegular","Dosis",verdana, arial;
+  font-size:13pt;  
+}
+
+.logo{
+  width:15.2%;
+  height:197px;
+  border-radius:100%;
+  margin-right: 10px;
+  box-shadow: 2px 4px 15px rgba(0,0,0,.80)
+}
+
+#clientes,#mision,#servicios{
+   background-image: url("../img/a.jpg");
+}
+
+#contacto{
+  background-image: url("../img/fn4.png");
+  opacity: 0.3;
+} 
+
+.logo1{
+  width:15.2%;
+  height:197px;
+  margin-top: 150px;
+  border-radius:100%;
+  margin-right: 10px;
+  box-shadow: 2px 4px 15px rgba(0,0,0,.80)
+}
+
+.submenu{
+  height: 30px;
+}
+
+.publicidad{
+/*   background: #036C8F; */
+  height: 400px;
+  background-image: url("../img/Fumigar.jpg");
+}
+
+.clientepu{
+/*   background: #036C8F; */
+  height: 452px;
+  background-image: url("../img/cliente.jpg");
+}
+
+.dentro{
+  background: #eee;
+  border-radius: 100%;
+  width: 75%;
+  height: 100%;
+  display: inline-block;
+}
+#vision{
+   
+}
+
+#inicio:hover{
+  height: 50px;
+  font-size: 20pt;
+  color:#11395E;
+  background: #eee;
+}
+
+.menu-fixed {
+  position:fixed;
+  z-index:1000;
+  top:0;
+  /*max-width:1000px;*/
+  left:0;
+  width:100%;
+  box-shadow:0px 4px 3px rgba(0,0,0,.5);
+} 
+
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: #f39c12;
+    border-color: #f39c12;
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+}
+
+
+
+
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 4em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+
+
+
+
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: ;
+    opacity: 0.03;
+}
+
+
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#myCarousel{
+  background-image: url("../img/verde.jpg");
+  height: 500px;
+  border-radius: 7px;
+}
+.carousel-inner { text-align: center;}
+.carousel .item > img { display: inline-block; }
+
+#myCarousel img{
+  height: 500px;
+  box-shadow: 18px 17px 19px rgba(0,0,0,.5);
+}
+.fade-carousel .slides .slide-1 {
+  background-image: url(../img/p1otrp.png); 
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(../img/p44.png);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(../img/p74.png);
+}
+
+
+
+
+
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+
+
+
