@@ -1,1 +1,1 @@
-web: gunicorn mypdfproject.wsgi --log-file -
+web: gunicorn fumigadora.wsgi --log-file -
