@@ -112,7 +112,7 @@
 			</div>
 		</div>
 
-		<div id="vision" style="padding-bottom: 67px;margin-top:0;margin-bottom: 0">
+		<div id="vision" style="margin-top:0;margin-bottom: 0">
 			<div style="padding-top:0;margin-bottom: 0">
 				<div id="publicidad" class="col-md-6 jumbotron text-center" style="opacity:0.9;display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#10791C;padding: 120px;">
 						<h1 class="jumbotron" style="border-radius: 10px;box-shadow: 2px 10px 15px rgba(0,0,0,.80);padding:25px">Eres nuestra prioridad</h1>
@@ -129,21 +129,21 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<div id="servicios" class="jumbotron text-center" style="margin-top: 0;margin-bottom:0;opacity:0.9;display: inline-block;vertical-align: top;padding-top: 30px;padding-bottom: 90px;font-family: 'Dosis'">
-			<div style="padding-top: 80px">
-				<h1 style="color:#eee">NUESTROS SERVICIOS</h1>
+			<div style="padding: 80px">
+				<h1 style="color:#eee;'font-family: 'Dosis';">NUESTROS SERVICIOS</h1>
 				<br><br><br>
 
-				<div id="sevf" class="jumbotron text-center" style="margin-bottom: 0">
+				<div id="sevf" class="jumbotron text-center" style="margin-bottom: 0;font-family: 'Dosis'">
 					{% for l in listado_servicios %}	
 						<div id="imagenesSer" class="col-md-3 col-md-offset-1" style=";margin-left: 80px;height: 373px;background: #eee;
-							    color:#062880;box-shadow: 10px 10px 15px rgba(0,0,0,.80);margin-bottom: 60px;border-radius: 10px">
+							    color:#062880;box-shadow: 10px 10px 15px rgba(0,0,0,.80);margin-bottom: 60px;border-radius: 8px">
 							{% load static %}
 					    	<div style="color:#192646">					      	
 						      	<h2 style="height:100px;font-size: 25pt;color:#132772" >{{ l }}</h2>
 						      	<div class="text-center">
-						      		 <img id="imageService" style="width:305px;height:199px ;border-radius: 5px;margin-top:10px;box-shadow: 4px 4px 4px rgba(0,0,0,.80);text-align: center" src="{{ l.imagen.url }}"alt="{{l}}">
+						      		 <img id="imageService" style="width:250px;height:170px ;border-radius: 5px;margin-top:10px;box-shadow: 4px 4px 4px rgba(0,0,0,.80);text-align: center" src="{{ l.imagen.url }}"alt="{{l}}">
 						      	</div>				       		       
 					   		</div>
 						</div>						
@@ -151,7 +151,7 @@
 				</div>	
 			</div>
 		</div>
-
+		
 		<div id="clientes" style="margin-top: 0;margin-bottom:0;opacity:0.9;width:100%;vertical-align: top;">
 			<div>
 				<div class="col-md-6 jumbotron text-center" style="opacity:0.9;display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#10791C;padding: 10px;padding-bottom: 11px">
@@ -290,15 +290,15 @@
 			</div>		
 		</div>
 		
-
-		<div id="contactoe" style="margin-top: 0;margin-bottom:0;opacity:0.9;color:#081650">
-			<div>
-				<div id="formd" class="col-md-6 jumbotron text-center" style="padding:61px">
+		
+		<div id="contactoe" class="text-center" style="margin-top: 0;margin-bottom:0;opacity:0.9;display: inline-block;vertical-align: top;font-family: 'Dosis';padding-top:0;padding-bottom: 0">
+			<div style="margin-bottom:0;">
+				<div id="formd" class="col-md-6 text-center" style="padding:65px;margin-bottom:0">
 					<div class="jumbotron text-center" style="border-radius: 10px;font-family: 'Dosis'">
 						<h2><strong>FUMIGADORA Y LIMPIEZA</strong></h2>
 						<h2><strong>BRILLOS Y MÁS</strong></h2>
 						<img style="width:70%;margin-bottom;0" src="{% static 'img/logoil.png' %}" alt="">
-						<div class="jumbotron" style="padding-bottom:125px;padding-left: 40px">
+						<div class="jumbotron" style="padding-bottom:120px;padding-left: 40px">
 							<div class="col-md-6" style="text-align: justify">
 								<dl style="font-size: 15pt">
 									<dt style="color:#141757">Ubicación:</dt>
@@ -318,28 +318,45 @@
 						</div>						
 					</div>					
 				</div>
-					
-				<div id="formc" class="col-md-6 jumbotron text-center" style="padding:50px">
-					<div class="jumbotron text-center"  style="border-radius: 10px;padding-top:20px;text-align: center;padding-bottom:26px">
-						<br>
-						<h3 style="color: #CC8A16"> <i style="margin-right: 10px"class="glyphicon glyphicon-envelope"></i> CONTÁCTANOS</h3>
-						<h5>¡Déjanos tus datos y podrás solicitar nuestros servicios!</h5>
-						<hr>
-						<div class="text-justify" style="padding-left: 95px">
-							<form style="width:80%" id="formContacto" action="{% url 'envio' %}" 
-							method="post" accept-charset="utf-8">
-								{% csrf_token %}
-								{{contacto.as_p}}
-								<br>
-								<input style="font-size:14pt;margin-left: 115px;width:130px"class="btn btn-success btn-md" type="submit" value="Enviar">
-							</form>
-						</div>	
-						<br>
-						<strong><p id="mensaje"> </p></strong>			
-					</div>					
-				</div>
+				<div id="formc" class="col-md-6 text-center" style="padding:40px;margin-bottom:0px;height: 758px">
+					<div class="jumbotron text-center" style="border-radius: 10px">
+							<h3 style="color: #CC8A16"> <i style="margin-right: 10px"class="glyphicon glyphicon-envelope"></i> CONTÁCTANOS</h3>
+							<h5>¡Déjanos tus datos y podrás solicitar nuestros servicios!</h5>
+							<hr>
+							<div class="text-justify" style="padding-left: 95px">
+								<form style="width:80%" id="formContacto" action="{% url 'envio' %}" 
+								method="post" accept-charset="utf-8">
+									{% csrf_token %}
+									{{contacto.as_p}}
+									<br>
+									<input style="font-size:14pt;margin-left: 135px;width:130px"class="btn btn-success btn-md" type="submit" value="Enviar">
+								</form>
+							</div>	
+							<br>
+							<strong><p id="mensaje"> </p></strong>
+					</div>
+				</div>							
 			</div>
 		</div>
+
+		<!-- <div class="jumbotron text-center" style="border-radius: 10px;
+									font-family: 'Dosis'">
+										<h3 style="color: #CC8A16"> <i style="margin-right: 10px"class="glyphicon glyphicon-envelope"></i> CONTÁCTANOS</h3>
+										<h5>¡Déjanos tus datos y podrás solicitar nuestros servicios!</h5>
+										<hr>
+										<div class="text-justify" style="padding-left: 95px">
+											<form style="width:80%" id="formContacto" action="{% url 'envio' %}" 
+											method="post" accept-charset="utf-8">
+												{% csrf_token %}
+												{{contacto.as_p}}
+												<br>
+												<input style="font-size:14pt;margin-left: 115px;width:130px"class="btn btn-success btn-md" type="submit" value="Enviar">
+											</form>
+										</div>	
+										<br>
+										<strong><p id="mensaje"> </p></strong>						
+									</div>	 -->				
+
 	</div>
 </body>
 </html>
