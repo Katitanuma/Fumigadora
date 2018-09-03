@@ -294,8 +294,12 @@
 		
 		<div id="contactoe" class="text-center" style="margin-top: 0;margin-bottom:0;opacity:0.9;display: inline-block;vertical-align: top;font-family: 'Dosis';padding-top:0;padding-bottom: 0">
 			<div style="margin-bottom:0;">
-				<div id="formd" class="col-md-6 text-center" style="padding:65px;margin-bottom:0">
-					<div class="jumbotron text-center" style="border-radius: 10px;font-family: 'Dosis'">
+				<div id="formd"class="col-md-12 jumbotron text-center" style="padding-bottom:0;margin-bottom:0;color:#eee">
+					<h1> <i style="margin-right: 10px"class="glyphicon glyphicon-envelope"></i> CONTÁCTANOS</h1>
+					<h2>¡Déjanos tus datos y podrás solicitar nuestros servicios!</h2>
+				</div>
+				<div id="formd" class="col-md-6 text-center" style="padding:65px;margin-bottom:0;padding-top:110px">
+					<div class="jumbotron text-center" style="border-radius: 10px;font-family: 'Dosis';color:#0A0F4B">
 						<h2><strong>FUMIGADORA Y LIMPIEZA</strong></h2>
 						<h2><strong>BRILLOS Y MÁS</strong></h2>
 						<img style="width:70%;margin-bottom;0" src="{% static 'img/logoil.png' %}" alt="">
@@ -319,10 +323,10 @@
 						</div>						
 					</div>					
 				</div>
-				<div id="formc" class="col-md-6 text-center" style="padding:40px;margin-bottom:0px;height: 758px">
-					<div class="jumbotron text-center" style="border-radius: 10px">
-							<h3 style="color: #CC8A16"> <i style="margin-right: 10px"class="glyphicon glyphicon-envelope"></i> CONTÁCTANOS</h3>
-							<h5>¡Déjanos tus datos y podrás solicitar nuestros servicios!</h5>
+				<div id="formc" class="col-md-6 text-center" style="padding:80px;margin-bottom:0px;height: 803px;color:#0A0F4B;padding-top:85px">
+					<div class="jumbotron text-center" style="border-radius: 10px;padding-top:15px">
+							<h3 style="color: #CC8A16">CONTACTO</h3>
+							<h5>¡Escríbenos y solicita nuestros servicios!</h5>
 							<hr>
 							<div class="text-justify" style="padding-left: 95px">
 								<form style="width:80%" id="formContacto" action="{% url 'envio' %}" 
@@ -330,7 +334,7 @@
 									{% csrf_token %}
 									{{contacto.as_p}}
 									<br>
-									<input style="font-size:14pt;margin-left: 135px;width:130px"class="btn btn-success btn-md" type="submit" value="Enviar">
+									<input style="font-size:14pt;margin-left: 98px;width:130px"class="btn btn-success btn-md" type="submit" value="Enviar">
 								</form>
 							</div>	
 							<br>
@@ -338,25 +342,7 @@
 					</div>
 				</div>							
 			</div>
-		</div>
-
-		<!-- <div class="jumbotron text-center" style="border-radius: 10px;
-									font-family: 'Dosis'">
-										<h3 style="color: #CC8A16"> <i style="margin-right: 10px"class="glyphicon glyphicon-envelope"></i> CONTÁCTANOS</h3>
-										<h5>¡Déjanos tus datos y podrás solicitar nuestros servicios!</h5>
-										<hr>
-										<div class="text-justify" style="padding-left: 95px">
-											<form style="width:80%" id="formContacto" action="{% url 'envio' %}" 
-											method="post" accept-charset="utf-8">
-												{% csrf_token %}
-												{{contacto.as_p}}
-												<br>
-												<input style="font-size:14pt;margin-left: 115px;width:130px"class="btn btn-success btn-md" type="submit" value="Enviar">
-											</form>
-										</div>	
-										<br>
-										<strong><p id="mensaje"> </p></strong>						
-									</div>	 -->				
+		</div>			
 
 	</div>
 </body>
