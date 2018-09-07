@@ -50,6 +50,28 @@ class Servicio(models.Model):
 	def __str__(self):
 		return self.nombre
 
+@python_2_unicode_compatible
+class Area(models.Model):
+	nombre = models.CharField(max_length=100)
+
+	def __str__(self):
+		return self.nombre
+
+class Foto(models.Model):
+	descripcion = models.CharField(max_length=150,null=True,blank=True)
+	foto = models.ImageField(upload_to='Fotos')
+	area = models.ForeignKey(Area)
+
+	
+
+
+
+
+
+
+
+
+
 
 
 

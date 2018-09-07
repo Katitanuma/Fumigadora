@@ -7,34 +7,67 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css'%}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/estilo.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/image.css' %}">
-	<link rel="icon" type="image/png" href="{% static 'img/Service2.png' %}" />
+	<link rel="icon" type="image/png" href="{% static 'img/logoil.png' %}" />
 	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Dancing+Script" rel="stylesheet">
 	<script src="{% static 'js/jquery.js'%} "></script>
 	<script src="{% static 'bootstrap/js/bootstrap.min.js' %} "></script>
 	<script src="{% static 'js/eventos.js' %}"></script>
+	<audio src="{% static 'audio/mijares.mp3'%}" autoplay="true" loop="true" hidden="true"></audio>
 </head>
 <body background="{% static 'img/p2.jpg'%}">
-	<div>
-		<header>
+	<div>		
+		<div>			
 			<nav id="myNavbar" style="background: #374763;height: 63px;padding-top: 5px;margin-bottom: 0;box-shadow:0px 4px 3px rgba(0,0,0,.5);opacity: 0.9" class="navbar">	
 			  <div class="container-fluid">
 			    <div class="collapse navbar-collapse" id="myNavbar">
 			      <ul class="nav navbar-nav">
-			      	<li><a id="inicio" style="font-size: 13pt" class="navbar-brand" href="#somos"> <strong>NUESTRA EMPRESA</strong></a></li>
-			        <li class="active"><a href="#mision"><strong>MISION</strong><span class="sr-only">(current)</span></a></li>
+			      	<li><a href="#bienvenida"><strong>NUESTRA EMPRESA</strong></a></li>
+			      	<li class="active"><a href="#somos"><strong>QUIÉNES SOMOS</strong></a></li>
+			        <li ><a href="#mision"><strong>MISION</strong><span class="sr-only">(current)</span></a></li>
+			        
 			        <li><a href="#vision"><strong>VISION</strong></a></li>
 			        <li><a href="#servicios"><strong>SERVICIOS</strong></a></li>
+			        <li><a href="#trabajos"><strong>TRABAJOS</strong></a></li>
 			        <li><a href="#clientes"><strong>CLIENTES</strong></a></li>
 			        <li><a href="#personal"><strong>PERSONAL</strong></a></li>
+			        <li><a href="#contactoe"><strong>CONTÁCTANOS</strong></a></li>
 			      </ul>
 			      <ul class="nav navbar-nav navbar-right">
-			      	<li><a href="#contactoe"><strong>CONTÁCTANOS</strong></a></li>
+			      	
 			      </ul>
 			    </div>
 			  </div>
 			</nav> 
-		</header>
+		
+		</div>
+		
+		<div id="bienvenida" class=" jumbotron justify" style="margin-bottom:0;padding-top:5px;padding-bottom: 0">
+			<div style="padding:20px;padding-top:0;padding-bottom: 0">
+				<div class="carta" style="background:#E5E2E2;padding:50px;border-radius:5px;margin-bottom:0;box-shadow: 1px 1px 20px rgba(0,0,0,.80)">
+				<h2><strong>A Nuestros Clientes y Amigos</strong></h2>
+				<p>En esos momentos cuando las cosas no van bien, Cuando no hay trabajo, pero hay un lugar al que hay que sostener, cuando el desánimo incontrolable, la tristeza y la impotencia te atrapa, Te refugias en Dios y le Cuestionas ¿Por qué a mí me pasan estas cosas? Y te aferras en Oración sosteniéndote de Dios, con lágrimas en tus ojos logras escuchar una voz que contesta a tu pregunta: Es porque te quiero, por eso es que estas aun aquí, porque tienes potencial y eres un ser sumamente extraordinario, con sueños, ideales y habilidades para lograrlo.</p>
+				<p>Hola soy Klenier Gutiérrez y en las líneas que anteriormente escribí resumo lo que me motivo a emprender y lograr así alcanzar mi sueño.</p>
+				<p>Es por eso que decidí ir por la ruta del emprendedor, decidí ser mi propio jefe, apostar por el desarrollo de mi país aportando un granito de arena a la economía.</p>
+				<p>Decidí formar mi propia empresa, emprender un pequeño negocio y desde 1999 y con solo una bomba de mochila es como este sueño inicio, no fue fácil, pero con el apoyo de mi familia logre materializar un sueño que está dando un fruto.</p>
+				<p>Fue un largo y duro camino hasta el año 2010 cuando fundamos una empresa con capital familiar, Limpieza y Fumigaciones Brillos y Más, ofreciendo servicios de primera, garantizando la satisfacción de nuestros clientes.</p>
+				<p>En Limpieza y Fumigaciones Brillos y Más nos caracterizamos por responsabilidad, experiencia y mano de obra calificada.</p>
+				<p>Hoy Agradecemos a nuestros clientes por preferir nuestros servicios y a la vez reiteramos nuestro compromiso para continuar mejorando día a día y ofrecerle calidad en cada uno de los servicios que brindamos</p>
+				<p>Es un orgullo para nosotros el sentirnos parte de su familia.
+				</p>
+				<p>
+					<h3><strong>Atentamente</strong></h3>
+					<span class="propietario">
+						Klenier Emilio Gutiérrez<br>
+						<em>Gerente General<br>
+						Limpieza y Fumigaciones Brillos y Más.</em>	
+					</span>					
+				</p>
+				</div>
+				
 
+			</div>
+		</div>
 		<div id="somos">
 			<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">		
 			  <div class="overlay"></div>
@@ -94,15 +127,17 @@
 			</article>
 		</div>
 
-		<div id="mision" style="margin-top: 0;margin-bottom:0;opacity:0.9;width:100%;display: inline-block;vertical-align: top;padding-top: 50px;padding-bottom: 90px;">
-			<div style="padding: 80px">
-				<div class="col-md-6 jumbotron" style="opacity:0.85;display: inline-block;text-align: center;vertical-align: top;font-family: 'Dosis';color:#222;padding: 70px;padding-bottom: 100px;background:#DCDADA;border-radius:100%;box-shadow: 3px 3px 15px rgba(0,0,0,.80);">
-				<strong><h1 style="color:#0C2679;margin-bottom:15px">MISIÓN</h1></strong>		
-				{% for m in mision %}
-					<h2 style="font-size: 23pt;text-align: justify;margin-left: 5px;margin-bottom:40px;margin-top:50px" >{{m.texto}}</h2>
-				{% endfor %}
+		<div id="mision" style="margin-top: 0;margin-bottom:0;opacity:0.9;width:100%;display: inline-block;vertical-align: top;padding-top: 20px;padding-bottom: 50px;">
+			<div id="circulo" style="padding: 80px">
+				<div id="misionizquierda" class="col-md-6 jumbotron" style="opacity:0.85;display: inline-block;text-align: center;vertical-align: top;font-family: 'Dosis';color:#222;padding: 70px;padding-bottom: 100px;background:#DCDADA;border-radius:100%;box-shadow: 3px 3px 15px rgba(0,0,0,.80);">
+				<strong><h1 id="titulomi" style="color:#0C2679;margin-bottom:15px">MISIÓN</h1></strong>
+					{% for m in mision %}
+					<div id="cuerpomi" style="font-size: 18pt;text-align: justify;margin-left: 5px;margin-bottom:40px;margin-top:50px">
+						<section>{{m.texto}}</section>
+					</div>						
+					{% endfor %}
 				</div>
-				<div class="col-md-6" style="padding-top: 10px;opacity:0.9;text-align: center;display: inline-block;">
+				<div id="misionderecha" class="col-md-6" style="padding-top: 10px;opacity:0.9;text-align: center;display: inline-block;padding-left:60px">
 					<div class="side left"></div>
 					<div class="side right"></div>
 					<div class="wrapper">
@@ -118,12 +153,14 @@
 				<div id="publicidad" class="col-md-6 jumbotron text-center" style="opacity:0.9;display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#10791C;padding: 120px;">
 						<h1 class="jumbotron" style="border-radius: 10px;box-shadow: 2px 10px 15px rgba(0,0,0,.80);padding:25px">Eres nuestra prioridad</h1>
 				</div>
-				<div class="col-md-6 jumbotron text-center"  style="opacity:0.8;display: inline-block;vertical-align: top;margin-bottom:0;background:#E4E4E4">
+				<div id="visionderecha" class="col-md-6 jumbotron text-center"  style="opacity:0.8;display: inline-block;vertical-align: top;margin-bottom:0;background:#E4E4E4;height:500px">
 					<section style="width:75%;display: inline-block;text-align: center;vertical-align: top;font-family: 'Dosis';color:#222;margin-bottom:0;margin-top:0">
 						<strong><h1 style="color:#047311" >VISIÓN</h1></strong>
 						<br>
 						{% for v in vision %}
-							<h2 style="font-size: 23pt;text-align: justify " >{{v.texto}}</h2>
+							<div id="cuerpomi" style="font-size: 21pt;text-align: justify;">
+								<section>{{v.texto}}</section>
+							</div>							
 						{% endfor %}
 						<br>
 					</section>	
@@ -134,28 +171,61 @@
 		<div id="servicios" class="jumbotron text-center" style="margin-top: 0;margin-bottom:0;opacity:0.9;display: inline-block;vertical-align: top;padding-top: 30px;padding-bottom: 90px;font-family: 'Dosis'">
 			<div style="padding: 80px">
 				<h1 style="color:#eee;'font-family: 'Dosis';">NUESTROS SERVICIOS</h1>
-				<br><br><br>
-
-				<div id="sevf" class="jumbotron text-center" style="margin-bottom: 0;font-family: 'Dosis'">
-					{% for l in listado_servicios %}	
-						<div id="imagenesSer" class="col-md-3 col-md-offset-1" style=";margin-left: 80px;height: 373px;background: #eee;
-							    color:#062880;box-shadow: 10px 10px 15px rgba(0,0,0,.80);margin-bottom: 60px;border-radius: 8px">
-							{% load static %}
-					    	<div style="color:#192646">					      	
-						      	<h2 style="height:100px;font-size: 25pt;color:#132772" >{{ l }}</h2>
-						      	<div class="text-center">
-						      		 <img id="imageService" style="width:250px;height:170px ;border-radius: 5px;margin-top:10px;box-shadow: 4px 4px 4px rgba(0,0,0,.80);text-align: center" src="{{ l.imagen.url }}"alt="{{l}}">
-						      	</div>				       		       
-					   		</div>
-						</div>						
-					{% endfor %}			
-				</div>	
+				<br><br><br>				
+				{% for l in listado_servicios %}	
+					<div id="filaser" class="col-sm-4 col-md-4" style="display: inline-block">
+					    <div id="tra" class="thumbnail" style="padding:10px;padding-bottom: 40px">
+					    	 <div class="caption">
+					            <h3 style="height:90px;font-size: 24pt;color:#132772">{{l}}</h3>
+					         </div>
+					         <center>
+					         	<a href="{{ l.imagen.url }}" target="_blank">
+						    	  <div id="imgservi" style="width:300px;height:180px;display:inline-block">
+						    	  	<img id="imgs" style="width:100%;height: 100%;box-shadow: 2px 4px 7px rgba(0,0,0,.85);border-radius:5px" src="{{ l.imagen.url }}" alt="">
+						    	  </div>				          					         
+						        </a>
+					         </center>				    	
+					    </div>
+					</div>		
+				{% endfor %}					
 			</div>
 		</div>
+
+		<div id="trabajos" class="jumbotron text-center" style="margin-top: 0;margin-bottom:0;opacity:0.92;display: inline-block;vertical-align: top;padding-top: 30px;font-family: 'Dosis';color:#120742;">
+			<div style="padding: 80px">
+				<h1>TRABAJAMOS CON CALIDAD...</h1>
+				<h2>Para brindarte un servicio impecable</h2>
+				<br><br>
+					{% load static %}
+					{% regroup fotos by area as listado_areas %}
+					<div>
+						{% for area in listado_areas %}
+							<h2 style="font-size:32pt"><strong>{{ area.grouper }}</strong></h2>
+							<br>
+							<div style="width:100%;display: inline-block;text-align:center">
+								{% for foto in area.list %}
+								  <div class="col-sm-6 col-md-4" style="display: inline-block">
+								    <div id="tra" class="thumbnail" style="padding:20px">
+								    	<a href="/media/{{foto.foto}}" target="_blank">
+								          <img id="trai" src="/media/{{foto.foto}}" alt="">	         
+								        </a>
+								        <br>
+								        <div class="caption">
+								            <h4 style="height: 30px;font-size: 16pt">{{ foto.descripcion }}</h4>
+								         </div>
+								      </div>
+								    </div>
+								{% endfor %}
+							</div>
+						{% endfor %}		
+					</div>							
+			</div>
+		</div>
+
 		
 		<div id="clientes" style="margin-top: 0;margin-bottom:0;opacity:0.9;width:100%;vertical-align: top;">
 			<div>
-				<div class="col-md-6 jumbotron text-center" style="opacity:0.9;display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#10791C;padding: 10px;padding-bottom: 11px">
+				<div id="relaciones" class="col-md-6 jumbotron text-center" style="opacity:0.9;display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#10791C;padding: 10px;padding-bottom: 11px">
 					<section style="width:75%;display: inline-block;text-align: center;vertical-align: top;font-family: 'Dosis';color:#222;margin-bottom:0">
 						<h1 style="color:#199013;font-size: 35pt" >LAS RELACIONES SON IMPORTANTES ...</h1>
 						<h2 style="font-size: 30pt;display:inline-block">Brindamos satisfacción a </h2>
@@ -173,35 +243,34 @@
 			<div style="padding-top: 80px">
 				<h1 style="color:#eee;text-align:center;">CLIENTES</h1>
 				<br><br>		
-				<div class="text-center jumbotron" style="width:90%;opacity:0.85;vertical-align: top;padding-top:50px;padding-bottom: 20px;margin-top:0;color:#0A1A61;font-family: 'Dosis';margin-top:0;background:#E4E4E4;margin-bottom:0;margin-left:65px;border-radius:15px">
+				<div id="cont" class="text-center jumbotron" style="width:90%;opacity:0.85;vertical-align: top;padding-top:50px;padding-bottom: 20px;margin-top:0;color:#0A1A61;font-family: 'Dosis';margin-top:0;background:#E4E4E4;margin-bottom:0;margin-left:65px;border-radius:15px;height:600px;padding-left:45px">
 					{% for l in listado_clientes %}
-					<div class="border rounded-top text-center >" style="display: inline-block;
-						border-radius: 7px;margin-left:5px;width:28.4%;color:#eee;text-align:left">
-						<div style="color:#222">		
-							<img style="width:27px;display:inline-block;padding-bottom: 20px;margin-right: 4px" src="{% static 'img/check.png' %}" alt="">			      	
+					<div id="nombrecliente" class="col-md-4 border rounded-top text-justify">
+						<div id="imno" style="color:#222">		
+							<img style="width:25px;display:inline-block;padding-bottom: 20px;margin-right: 4px" src="{% static 'img/check.png' %}" alt="">     	
 						    <h3 style="height:80px;display:inline-block;font-size: 17pt" ><strong>{{ l }}</strong></h3>	      
 					   	</div>
-			  		</div>	
+					</div>
 				{% endfor %}
 				</div>
 				<br><br>
-				<div>
-					<div class="col-md-2">
+				<div class="col-md-12">
+					<div class="col-md-2 empresas">
 						<img class="logo" src="{% static 'img/unimall.png' %}" alt="">
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-2 empresas">
 						<img class="logo1" src="{% static 'img/unicines.jpg' %}" alt="">
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-2 empresas">
 						<img class="logo" src="{% static 'img/uniplaza.jpg' %}" alt="">
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-2 empresas">
 						<img class="logo1" src="{% static 'img/pizza.jpeg' %}" alt="">
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-2 empresas">
 						<img class="logo" src="{% static 'img/intrefica.jpg' %}" alt="">
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-2 empresas">
 						<img class="logo1" src="{% static 'img/kfc.jpg' %}" alt="">
 					</div>		
 				</div>	
@@ -215,7 +284,7 @@
 					<h1 style="color:#047311" >PERSONAL Y EQUIPOS</h1>
 					<br><br>
 				</div>
-				<div class="col-md-7 jumbotron text-center" style="display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#10791C;padding: 60px;padding-bottom: 11px;padding-top:10px;padding-bottom:100px">
+				<div id="personaliz" class="col-md-7 jumbotron text-center" style="display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#10791C;padding: 60px;padding-top:10px;height:610px;">
 					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
 					  <ol class="carousel-indicators">
 					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -279,8 +348,8 @@
 					</div>
 				</div>
 
-				<div class="col-md-5 jumbotron text-center" style="display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#0B0E49;padding: 60px;padding-bottom:59px">
-					<section style="display: inline-block;text-align: center;vertical-align: top;font-family: 'Dosis';color:#222;margin-bottom:0;text-align: justify;margin-top:0">
+				<div id="personalde" class="col-md-5 jumbotron text-center" style="display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#0B0E49;padding: 100px;padding-top:0;height:610px">
+					<section id="textoem" style="display: inline-block;text-align: center;vertical-align: top;font-family: 'Dosis';color:#222;margin-bottom:0;text-align: justify;margin-top:0">
 						<h1 style="color:#199013;font-size: 24pt;display:inline-block">NUESTROS EMPLEADOS </h1>
 						<h3 style="font-size: 18pt;display:inline-block">Están preparados para ofrecerte un servicio de calidad, cada uno, cuenta con las habilidades y valores que se necesitan para otorgarte los mejores resultados y que nuestra relación sea la mejor.</h3>
 						<hr>
@@ -294,12 +363,12 @@
 		
 		<div id="contactoe" class="text-center" style="margin-top: 0;margin-bottom:0;opacity:0.9;display: inline-block;vertical-align: top;font-family: 'Dosis';padding-top:0;padding-bottom: 0">
 			<div style="margin-bottom:0;">
-				<div id="formd"class="col-md-12 jumbotron text-center" style="padding-bottom:0;margin-bottom:0;color:#eee">
+				<div id="forme"class="col-md-12 jumbotron text-center" style="padding-bottom:0;margin-bottom:0;color:#eee">
 					<h1> <i style="margin-right: 10px"class="glyphicon glyphicon-envelope"></i> CONTÁCTANOS</h1>
 					<h2>¡Déjanos tus datos y podrás solicitar nuestros servicios!</h2>
 				</div>
-				<div id="formd" class="col-md-6 text-center" style="padding:65px;margin-bottom:0;padding-top:110px">
-					<div class="jumbotron text-center" style="border-radius: 10px;font-family: 'Dosis';color:#0A0F4B">
+				<div id="formd" class="col-md-6 text-center" style="padding:65px;padding-top:84px;padding-bottom: 92px">
+					<div id="formd1"class="jumbotron text-center" style="border-radius: 10px;font-family: 'Dosis';color:#0A0F4B">
 						<h2><strong>FUMIGADORA Y LIMPIEZA</strong></h2>
 						<h2><strong>BRILLOS Y MÁS</strong></h2>
 						<img style="width:70%;margin-bottom;0" src="{% static 'img/logoil.png' %}" alt="">
@@ -323,18 +392,20 @@
 						</div>						
 					</div>					
 				</div>
-				<div id="formc" class="col-md-6 text-center" style="padding:80px;margin-bottom:0px;height: 803px;color:#0A0F4B;padding-top:85px">
-					<div class="jumbotron text-center" style="border-radius: 10px;padding-top:50px">
+				<div id="formc" class="col-md-6 text-center" style="padding:80px;margin-bottom:0px;height: 804px;color:#0A0F4B;padding-top:85px">
+					<div id="formc1" class="jumbotron text-center" style="border-radius: 10px;padding-top:50px">
 							<h3 style="color: #CC8A16">CONTACTO</h3>
 							<h5>¡Escríbenos y solicita nuestros servicios!</h5>
 							<hr>
-							<div class="text-justify" style="padding-left: 95px">
-								<form style="width:80%" id="formContacto" action="{% url 'envio' %}" 
+							<div id="dentroform" class="text-justify" style="padding-left:70px;padding-right:40px">
+								<form style="width:90%" id="formContacto" action="{% url 'envio' %}" 
 								method="post" accept-charset="utf-8">
 									{% csrf_token %}
 									{{contacto.as_p}}
 									<br>
-									<input style="font-size:14pt;margin-left: 98px;width:130px"class="btn btn-success btn-md" type="submit" value="Enviar">
+									<div id="enviar" style="margin-left: 120px;">
+										<input id="btn" style="width:136px;font-size:18px;" class="btn btn-success btn-md" type="submit" value="Enviar">
+									</div>									
 								</form>
 							</div>	
 							<br>

@@ -15,14 +15,19 @@ def home(request):
 	servicios = Servicio.objects.all()
 	clientes = Cliente.objects.all()
 	contacto = Form_Contacto()
-  
+	areas = Area.objects.all()
+	fotos = Foto.objects.all()	
+
+	
 	data={
 		'somos':somos,
 		'mision':mision,
 		'vision':vision,
 		'listado_servicios':servicios,
 		'listado_clientes':clientes,
-		'contacto':contacto
+		'contacto':contacto,
+		'listado_areas':areas,
+		'fotos':fotos		
 	}
 
 	return render(request,'base1.html',data)

@@ -17,8 +17,26 @@ a{
   box-shadow: 2px 4px 15px rgba(0,0,0,.80)
 }
 
-#clientesl,#mision,#servicios,#sevf,#c,#formc,#formd{
+#clientesl,#mision,#servicios,#sevf,#c,#formc,#formd,#forme{
    background-image: url("../img/a.jpg");
+}
+
+#bienvenida{
+   background-image: url("../img/carta.jpg");
+}
+#trabajos{
+   background-image: url("../img/blank.jpg");
+   color:#eee;
+}
+
+#tra{
+  box-shadow: 4px 4px 15px rgba(0,0,0,.90);
+}
+
+#trai{
+  box-shadow: 2px 2px 5px rgba(0,0,0,.80);
+  border-radius:7px;
+  width: 100%;
 }
 
 .logo1{
@@ -27,10 +45,6 @@ a{
   margin-top: 50px;
   border-radius:100%;
   box-shadow: 2px 4px 15px rgba(0,0,0,.80)
-}
-
-.submenu{
-  height: 30px;
 }
 
 #publicidad{
@@ -52,16 +66,7 @@ a{
   height: 100%;
   display: inline-block;
 }
-#vision{
-   
-}
 
-#inicio:hover{
-  height: 50px;
-  font-size: 20pt;
-  color:#11395E;
-  background: #eee;
-}
 
 .menu-fixed {
   position:fixed;
@@ -92,7 +97,19 @@ a{
   opacity: 1;
 }
 
+.carta {
+  box-sizing: border-box;
+  color: #000;
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0 auto;
+  padding: 0 100px;
+  opacity: 0.9;
+  width: 80%;
+}
 
+.propietario {
+  font-size: 1.4em;
+}
 
 
 
@@ -183,19 +200,483 @@ a{
 
 
 
-@media screen and (max-width: 980px){
+
+
+
+
+@media screen and (max-width: 1243px){
     .hero { 
-      width: 980px; 
+      width: 1243px; 
     }  
-    #imageService{
-      display: block;
-      width:100px;
-      height:89px;
-    }  
-     #ser{
-      width: 40%;
-      display: inline-block
+    
+    #mision{
+      width: 1243px;
+
     }
+    #circulo{
+      padding: 50px;
+    }
+    #titulomi{
+      font-size: 35px;
+      height: 5px;
+    }
+
+    #misionizquierda{
+      padding: 0;
+      height:520px;
+      padding-bottom: 1px;
+    }
+    #cuerpomi{
+      font-size: 1px;
+      margin-bottom:0;
+      /* border:1px solid #222; */
+    }
+
+    #somos h1{
+      font-size: 45px;
+    }
+
+    #visionderecha{
+      height: 463px;
+    }
+
+    #vision h1{
+      font-size: 45px;
+    }
+
+    #servicios h1{
+      font-size: 50px;
+    }
+
+    #clientesl h1{
+      font-size: 50px;
+    }
+
+    #trabajos h1{
+      font-size: 50px;
+    }
+    
+    #personal h1{
+      font-size: 50px;
+    }
+
+    #contactoe h1{
+      font-size: 50px;
+      padding-left: 0px;
+
+    }
+    
+    #dentroform #formContacto #enviar{
+      padding-left: 33px;
+    }
+
+    #formd{
+      height: 804px;
+    }
+
+
+    #clientesl #nombrecliente{
+      font-size: 10pt;
+      margin-left: 100px;      
+      width: 40%;
+    }
+
+    #clientesl #nombrecliente h3{
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    #clientesl #nombrecliente #imno{
+      height: 80px;
+    }
+   
+
+    #clientesl .empresas{
+      width: 33%;
+    }
+
+    #clientesl .empresas .logo{
+      width: 75%;
+      height:265px;
+       margin-top: 20px;
+    }
+     #clientesl .empresas .logo1{
+      width: 75%;
+      height:260px;
+      margin-top: 20px;
+    }
+
+    #somos h2{
+      font-size: 5px;      
+    }
+
+    #clientepu h1{
+      font-size: 45px;
+    }
+    
+
+    #servicios #filaser{
+      width: 50%;
+      padding:10px;
+    }
+}
+
+
+
+@media screen and (max-width: 1050px){
+    .hero { 
+      width: 1050px; 
+    }  
+
+    #myNavbar a{
+      font-size: 15px;
+    }    
+    
+    #mision{
+      width: 1050px;
+      padding-left: 0;
+    }
+
+    #circulo{
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    #titulomi{
+      font-size: 30px;
+      height: 1px;
+      margin-top: 0;
+    }
+
+    #misionizquierda{
+      width: 62%;
+      padding: 0;
+      box-sizing: border-box;
+      height:500px;
+      padding-bottom: 0;
+      border:1px solid #222;
+      margin-left: 0px;
+    }
+
+    #misionderecha{
+       width: 30%;
+       padding-left: 0px;
+    }
+
+    #cuerpomi{
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 10pt;
+    }
+
+
+    #somos h1{
+      font-size: 35px;
+    }
+
+    #relaciones{
+      width: 100%;
+    }
+    
+    #clientepu{
+       width: 100%;
+    }
+    #visionderecha{
+      height: 463px;
+    }
+
+    #vision h1{
+      font-size: 35px;
+    }
+
+    #servicios h1{
+      font-size: 50px;
+    }
+    #personaliz{
+       width: 100%;
+       padding:0;
+       padding-bottom: 0;
+       margin-bottom: 0;
+    }
+
+    #textoem{
+      padding-top: 0;     
+      margin-top: 0;
+       margin-bottom: 0;
+    }
+    #personalde{
+      vertical-align: top;
+      width: 100%;
+    }
+    #clientesl h1{
+      font-size: 40px;
+    }
+
+    #trabajos h1{
+      font-size: 40px;
+    }
+    
+    #personal h1{
+      font-size: 40px;
+    }
+
+    #contactoe h1{
+      font-size: 40px;
+      padding-left: 0px;
+
+    }
+    
+    #dentroform #formContacto #enviar{
+      padding-left: 33px;
+    }
+
+    #formd{
+      width:100%;
+      height: 804px;
+    }
+
+    #formc{
+      width:100%;
+    }
+
+    #formc1{
+      width:70%;
+      margin-left: 125px;
+    }
+    #formd1{
+      width:70%;
+       margin-left: 130px;
+    }
+    #clientesl #nombrecliente{
+      font-size: 10pt;
+      margin-left: 40px;      
+      width: 40%;
+    }
+
+    #clientesl #nombrecliente h3{
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    #clientesl #nombrecliente #imno{
+      height: 80px;
+    }
+   
+
+    #clientesl .empresas{
+      width: 33%;
+    }
+
+    #clientesl .empresas .logo{
+      width: 65%;
+      height:200px;
+       margin-top: 20px;
+    }
+     #clientesl .empresas .logo1{
+      width: 65%;
+      height:200px;
+      margin-top: 20px;
+    }
+
+
+    #clientepu h1{
+      font-size: 45px;
+    }    
+
+    #servicios #filaser{
+      width: 50%;
+      padding:10px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 960px){
+    .hero { 
+      width: 960px; 
+    }  
+
+    #myNavbar a{
+      font-size: 13px;
+    }    
+    
+    #mision{
+      width: 960px;
+      padding-left: 0;
+    }
+
+    #circulo{
+      padding: 2px;
+      box-sizing: border-box;
+    }
+
+    #publicidad{
+      width: 100%;
+    }
+    #titulomi{
+      font-size: 27px;
+      height: 1px;
+      margin-top: 0;
+    }
+
+    #misionizquierda{
+      width: 66%;
+      padding: 0;
+      box-sizing: border-box;
+      height:500px;
+      padding-bottom: 0;
+      border:1px solid #222;
+      margin-left: 0px;
+    }
+
+    #misionderecha{
+       width: 30%;
+       padding-left: 0px;
+    }
+
+    #cuerpomi{
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 8pt;
+    }
+
+
+    #somos h1{
+      font-size: 35px;
+    }
+
+    #relaciones{
+      width: 100%;
+    }
+    
+    #clientepu{
+       width: 100%;
+    }
+    #visionderecha{
+      height: 420px;
+      margin-bottom: 0;
+    }
+
+    #vision h1{
+      font-size: 35px;      
+      padding: 10px;
+    }
+
+    #servicios{
+      margin-top: 0;
+    }
+
+    #servicios h1{
+      font-size: 40px;
+    }
+    #personaliz{
+       width: 100%;
+       padding:0;
+       padding-bottom: 0;
+       margin-bottom: 0;
+    }
+
+    #textoem{
+      padding-top: 0;     
+      margin-top: 0;
+       margin-bottom: 0;
+    }
+    #personalde{
+      vertical-align: top;
+      width: 100%;
+    }
+    #clientesl h1{
+      font-size: 40px;
+    }
+
+    #trabajos h1{
+      font-size: 40px;
+    }
+    
+    #personal h1{
+      font-size: 40px;
+    }
+
+    #contactoe h1{
+      font-size: 40px;
+      padding-left: 0px;
+
+    }
+    
+    #dentroform #formContacto #enviar{
+      padding-left: 120px;
+    }
+
+    #formd{
+      width:100%;
+      height: 850px;
+      margin-top: 0;
+      padding-right: 40px;
+    }
+
+    #formc{
+      width:100%;
+      margin-top: 0;
+    }
+
+    #formc1{
+      width:70%;
+      margin-left: 125px;
+    }
+    #formd1{
+      width:70%;
+       margin-left: 130px;
+       height: 400px;
+
+    }
+    #clientesl #nombrecliente{
+      font-size: 10pt;
+      margin-left: 10px;      
+      width: 100%;
+    }
+
+    #clientesl #nombrecliente h3{
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    #clientesl #nombrecliente #imno{
+      height: 42px;
+    }
+    
+    #forme{
+      margin-bottom: 0;
+      height: 200px;
+    }
+
+    #clientesl .empresas{
+      width: 100%;
+    }
+
+    #clientesl .empresas .logo{
+      width: 35%;
+      height:290px;
+       margin-top: 20px;
+    }
+     #clientesl .empresas .logo1{
+      width: 35%;
+      height:290px;
+      margin-top: 20px;
+    }
+
+
+    #clientepu h1{
+      font-size: 45px;
+    }    
+
+    #servicios #filaser{
+      width: 50%;
+      padding:10px;
+    }
+    
 }
 
 @media screen and (min-width: 980px){
@@ -246,6 +727,243 @@ a{
       font-size: 10pt;
     }    
 }
+
+
+
+@media screen and (max-width: 600px){
+    .hero { 
+      width: 600px; 
+    }  
+
+    #myNavbar a{
+      font-size: 9px;
+    }    
+    
+    #mision{
+      width: 600px;
+      padding-left: 0;
+    }
+
+    #circulo{
+      padding: 2px;
+      box-sizing: border-box;
+    }
+
+    #publicidad{
+      width: 100%;
+    }
+    #titulomi{
+      font-size: 27px;
+      height: 1px;
+      margin-top: 0;
+    }
+
+    #misionizquierda{
+      width: 66%;
+      padding: 0;
+      box-sizing: border-box;
+      height:500px;
+      padding-bottom: 0;
+      border:1px solid #222;
+      margin-left: 0px;
+    }
+
+    #misionderecha{
+       width: 30%;
+       padding-left: 0px;
+    }
+
+    #cuerpomi{
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 10pt;
+    }
+
+
+    #somos h1{
+      font-size: 35px;
+    }
+
+    #relaciones{
+      width: 100%;
+    }
+    
+    #clientepu{
+       width: 100%;
+    }
+    #visionderecha{
+      height: 420px;
+      margin-bottom: 0;
+    }
+
+    #vision h1{
+      font-size: 35px;      
+      padding: 10px;
+    }
+
+    #servicios{
+      margin-top: 0;
+    }
+
+    #servicios h1{
+      font-size: 40px;
+    }
+    #personaliz{
+       width: 100%;
+       padding:0;
+       padding-bottom: 0;
+       margin-bottom: 0;
+    }
+
+    #textoem{
+      padding-top: 0;     
+      margin-top: 0;
+       margin-bottom: 0;
+    }
+    #personalde{
+      vertical-align: top;
+      width: 100%;
+    }
+    #clientesl h1{
+      font-size: 40px;
+    }
+
+    #trabajos h1{
+      font-size: 40px;
+    }
+    
+    #personal h1{
+      font-size: 40px;
+    }
+
+    #contactoe h1{
+      font-size: 40px;
+      padding-left: 0px;
+
+    }
+    
+    #dentroform #formContacto #enviar{
+      padding-left: 93px;
+    }
+
+    #formd{
+      width:100%;
+      height: 850px;
+      margin-top: 0;
+      padding-right: 40px;
+    }
+
+    #formc{
+      width:100%;
+      margin-top: 0;
+    }
+
+    #formc1{
+      width:70%;
+      margin-left: 125px;
+    }
+    #formd1{
+      width:70%;
+       margin-left: 130px;
+       height: 400px;
+
+    }
+    #clientesl #nombrecliente{
+      font-size: 10pt;
+      margin-left: 10px;      
+      width: 100%;
+    }
+
+    #clientesl #nombrecliente h3{
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    #clientesl #nombrecliente #imno{
+      height: 42px;
+    }
+    
+    #forme{
+      margin-bottom: 0;
+      height: 200px;
+    }
+
+    #clientesl .empresas{
+      width: 100%;
+    }
+
+    #clientesl .empresas .logo{
+      width: 35%;
+      height:290px;
+       margin-top: 20px;
+    }
+     #clientesl .empresas .logo1{
+      width: 35%;
+      height:290px;
+      margin-top: 20px;
+    }
+
+
+    #clientepu h1{
+      font-size: 45px;
+    }    
+
+    #servicios #filaser{
+      width: 50%;
+      padding:10px;
+    }
+    
+}
+
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }  
+    #imageService{
+      display: inline-block;
+      width:100px;
+      height:89px;
+    }  
+
+}
+
+
+@media screen and (min-width: 840px){
+    .hero { width: 840px; }  
+    #imageService{
+      display: inline-block;
+      width:100px;
+      height:99px;
+    }  
+}
+
+
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; } 
+    .letras{
+      font-size: 4em;
+    }   
+}
+
+@media screen and (min-width: 640px){
+    .hero h1 { font-size: 3em;}  
+    .letras{
+      font-size: 16pt;
+    } 
+}
+
+@media screen and (max-width: 550px){
+    .hero h1 { font-size: 2em;}  
+    .letras{
+      font-size: 14pt;
+    } 
+}
+
+@media screen and (max-width: 440px){
+    .hero h1 { font-size: 2em; } 
+    .letras{
+      font-size: 10pt;
+    }    
+}
+
 
 
 
