@@ -53,14 +53,12 @@ def envio(request, *args, **kwargs):
 					subject='Mensaje de FUMIGADORA Y LIMPIEZA BRILLOS Y MÁS',
 					body=body,
 					from_email=correo,
-					to=['katy.421997@gmail.com'],
+					to=['kleguma@yahoo.com'],
 				)
 				email_message.content_subtype = 'html'
 				email_message.send()
 
 				return JsonResponse({'mensaje': 'Tu mensaje ha sido enviado' })
-				# return JsonResponse({'mensaje':mensaje})
-				# return HttpResponse ('Mensaje de correo enviado')
 			except Exception as e:
 				return HttpResponse('Error: ' +str(e))
 

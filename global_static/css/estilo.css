@@ -2,12 +2,18 @@ body{
   position:relative;
 }
 
+
+nav.navbar {
+    background-color: #374763;
+    width: 100%;
+}
+
 a{
   height: 50px;
   color:#FFFFFF;
   border-radius: 3px;
   font-family: "BebasNeueRegular","Dosis",verdana, arial;
-  font-size:13pt;  
+  font-size:11pt;  
 }
 
 .logo{
@@ -21,7 +27,7 @@ a{
    background-image: url("../img/a.jpg");
 }
 
-#bienvenida{
+#bien{
    background-image: url("../img/carta.jpg");
 }
 #trabajos{
@@ -321,7 +327,12 @@ a{
     }
 }
 
+@media screen and (max-width: 1118px){
+  #clientesl #nombrecliente #imno{
+      height: 40px;
+    }
 
+}
 
 @media screen and (max-width: 1050px){
     .hero { 
@@ -348,7 +359,7 @@ a{
     }
 
     #misionizquierda{
-      width: 62%;
+      width: 50%;
       padding: 0;
       box-sizing: border-box;
       height:500px;
@@ -419,32 +430,39 @@ a{
       font-size: 40px;
     }
 
-    #contactoe h1{
-      font-size: 40px;
-      padding-left: 0px;
+     #formc1{
+      width:60%;
+      margin-left: 0px;
 
     }
-    
-    #dentroform #formContacto #enviar{
-      padding-left: 33px;
+    #contactoe{
+      width: 100%;
+      padding-left: 0;
     }
-
-    #formd{
-      width:100%;
-      height: 804px;
-    }
-
     #formc{
-      width:100%;
+      width: 100%;
+    }
+    #formd{
+      padding-left: 0px;
+      margin: 0;
+      width: 100%;
+      padding-bottom: 0;
+    }
+    #form1d{
+      display: inline-block;
+      padding-left: 0;
+       margin-left: 0px;
+       padding-bottom: 0;
     }
 
-    #formc1{
-      width:70%;
-      margin-left: 125px;
+    #form1d #fd1{
+      width: 50%;
     }
-    #formd1{
-      width:70%;
-       margin-left: 130px;
+    #form1d #fd2{
+      width: 50%;
+    }
+    #enviar #btn{
+      font-size: 15pt;
     }
     #clientesl #nombrecliente{
       font-size: 10pt;
@@ -491,20 +509,189 @@ a{
 
 
 
+@media screen and (max-width: 1208px){
+  #bien{
+   padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 776px){
+  #contenbarra{
+    margin-bottom: 0;   
+    padding: 0; 
+    position: relative;
+     margin-top: 0;       
+  }
+
+  #barra{
+    margin-bottom: 0;
+    margin-top: 0;
+    vertical-align: center;
+    display: inline-block;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+
+  #bien{
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 766px){
+
+    #formc1{
+      width:90%;
+      margin-left: 0px;
+
+    }
+    #formd{
+      width: 100%;
+      padding: 0px;
+      margin: 0;
+      padding-left: 0;
+    }
+    #formd1{
+      width:100%;padding-left: 0;
+       margin-left: 0px;
+    }
+    #enviar #btn{
+      font-size: 11pt;
+    }
+}
 
 
 
-@media screen and (max-width: 960px){
-    .hero { 
-      width: 960px; 
-    }  
 
-    #myNavbar a{
-      font-size: 13px;
-    }    
+
+
+
+
+
+
+
+
+@media screen and (max-width: 529px){
+    #myCarousel{
+      height: 300px;
+      margin-bottom: 0;
+    }
     
     #mision{
-      width: 960px;
+      width: 100%;
+      padding: 0;
+    }
+    
+    #mision #circulo{
+      padding: 0px;
+
+    }
+
+    #mision #misionizquierda{
+      width: 95%;
+      padding: 0;
+      height:490px;
+      border-radius: 2%;
+      padding-bottom: 0;      
+      margin-left: 0px;
+    }
+
+    #mision #misionderecha{
+      width: 100%;
+    }
+
+    #servicios{
+      width: 100%;
+    }
+    #clientesl{
+      width: 100%;
+    }
+     #clientesl .empresas{
+      width:30%; 
+      display: inline-block;
+    }
+
+    #clientesl .empresas .logo{
+      margin-left: 0;
+      width: 70%;
+      height:235px;
+       margin-top: 20px;
+    }
+     #clientesl .empresas .logo1{
+      width: 70%;
+      height:235px;
+      margin-top: 20px;
+    }
+    
+
+    #personal h1{
+      font-size: 10px;
+    }
+
+    #personal #personaliz{
+      width: 100%;
+      height: 20%;
+      padding-bottom: 0;
+    }
+
+    #myCarousel img{
+      height: 300px;
+    }
+
+    #letracarta p{
+      font-size: 12pt;
+    }
+
+    #formc1{
+      width:90%;
+      margin-left: 0px;
+
+    }
+    #contactoe{
+      width: 100%;
+      padding-left: 0;
+    }
+    #formd{
+      padding-left: 0px;
+      margin: 0;
+    }
+    #form1d{
+       display: inline-block;
+      padding-left: 0;
+       margin-left: 0px;
+    }
+
+    #form1d #fd1{
+      width: 100%;
+    }
+    #form1d #fd2{
+      width: 100%;
+    }
+    #enviar #btn{
+      font-size: 11pt;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1000px){
+  #bienvenida{
+    margin-top: 70px;
+  }
+  a{
+    font-size: 9.3pt;
+  }
+}
+
+@media screen and (max-width: 980px){
+    .hero { 
+      width: 980px; 
+    }  
+
+    
+    #mision{
+      width: 980px;
       padding-left: 0;
     }
 
@@ -523,7 +710,7 @@ a{
     }
 
     #misionizquierda{
-      width: 66%;
+      width: 52%;
       padding: 0;
       box-sizing: border-box;
       height:500px;
@@ -559,6 +746,7 @@ a{
       height: 420px;
       margin-bottom: 0;
     }
+
 
     #vision h1{
       font-size: 35px;      
@@ -600,37 +788,34 @@ a{
       font-size: 40px;
     }
 
-    #contactoe h1{
-      font-size: 40px;
-      padding-left: 0px;
-
-    }
-    
-    #dentroform #formContacto #enviar{
-      padding-left: 120px;
-    }
-
-    #formd{
-      width:100%;
-      height: 850px;
-      margin-top: 0;
-      padding-right: 40px;
-    }
-
-    #formc{
-      width:100%;
-      margin-top: 0;
-    }
-
+   
     #formc1{
-      width:70%;
-      margin-left: 125px;
-    }
-    #formd1{
-      width:70%;
-       margin-left: 130px;
-       height: 400px;
+      width:90%;
+      margin-left: 0px;
 
+    }
+    #contactoe{
+      width: 100%;
+      padding-left: 0;
+    }
+    #formd{
+      padding-left: 0px;
+      margin: 0;
+    }
+    #form1d{
+       display: inline-block;
+      padding-left: 0;
+       margin-left: 0px;
+    }
+
+    #form1d #fd1{
+      width: 100%;
+    }
+    #form1d #fd2{
+      width: 100%;
+    }
+    #enviar #btn{
+      font-size: 13pt;
     }
     #clientesl #nombrecliente{
       font-size: 10pt;
@@ -647,23 +832,22 @@ a{
       height: 42px;
     }
     
-    #forme{
-      margin-bottom: 0;
-      height: 200px;
-    }
+   
 
     #clientesl .empresas{
-      width: 100%;
+      width:40%; 
+      display: inline-block;
     }
 
     #clientesl .empresas .logo{
-      width: 35%;
-      height:290px;
+      margin-left: 0;
+      width: 70%;
+      height:235px;
        margin-top: 20px;
     }
      #clientesl .empresas .logo1{
-      width: 35%;
-      height:290px;
+      width: 70%;
+      height:235px;
       margin-top: 20px;
     }
 
@@ -678,6 +862,10 @@ a{
     }
     
 }
+
+
+
+
 
 @media screen and (min-width: 980px){
     .hero { width: 980px; }  
@@ -730,17 +918,17 @@ a{
 
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 880px){
     .hero { 
-      width: 600px; 
+      width: 880px; 
     }  
 
     #myNavbar a{
-      font-size: 9px;
+      font-size: 12px;
     }    
     
     #mision{
-      width: 600px;
+      width: 880px;
       padding-left: 0;
     }
 
@@ -752,6 +940,7 @@ a{
     #publicidad{
       width: 100%;
     }
+
     #titulomi{
       font-size: 27px;
       height: 1px;
@@ -759,7 +948,7 @@ a{
     }
 
     #misionizquierda{
-      width: 66%;
+      width: 60%;
       padding: 0;
       box-sizing: border-box;
       height:500px;
@@ -769,7 +958,196 @@ a{
     }
 
     #misionderecha{
-       width: 30%;
+       width: 28%;
+       padding-left: 0px;
+    }
+
+    #cuerpomi{
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 10pt;
+    }
+
+
+    #somos h1{
+      font-size: 35px;
+    }
+
+    #relaciones{
+      width: 100%;
+    }
+    
+    #clientepu{
+       width: 100%;
+    }
+    #visionderecha{
+      height: 420px;
+      margin-bottom: 0;
+    }
+
+    #vision h1{
+      font-size: 35px;      
+      padding: 10px;
+    }
+
+    #servicios{
+      margin-top: 0;
+    }
+
+    #servicios h1{
+      font-size: 40px;
+    }
+    #personaliz{
+       width: 100%;
+       padding:0;
+       padding-bottom: 0;
+       margin-bottom: 0;
+    }
+
+    #textoem{
+      padding-top: 0;     
+      margin-top: 0;
+       margin-bottom: 0;
+    }
+    #personalde{
+      vertical-align: top;
+      width: 100%;
+    }
+    #clientesl h1{
+      font-size: 40px;
+    }
+
+    #trabajos h1{
+      font-size: 40px;
+    }
+    
+    #personal h1{
+      font-size: 40px;
+    }
+
+    #formc1{
+      width:90%;
+      margin-left: 0px;
+
+    }
+    #contactoe{
+      width: 100%;
+      padding-left: 0;
+    }
+    #formd{
+      padding-left: 0px;
+      margin: 0;
+    }
+    #form1d{
+       display: inline-block;
+      padding-left: 0;
+       margin-left: 0px;
+    }
+
+    #form1d #fd1{
+      width: 100%;
+    }
+    #form1d #fd2{
+      width: 100%;
+    }
+    #enviar #btn{
+      font-size: 13pt;
+    }
+    #clientesl #nombrecliente{
+      font-size: 10pt;
+      margin-left: 10px;      
+      width: 100%;
+    }
+
+    #clientesl #nombrecliente h3{
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    #clientesl #nombrecliente #imno{
+      height: 42px;
+    }
+    
+    #forme{
+      margin-bottom: 0;
+      height: 200px;
+    }
+
+    #clientesl .empresas{
+      width: 30%;
+      display: inline-block;
+    }
+
+    #clientesl .empresas .logo{
+      width: 85%;
+      height:185px;
+       margin-top: 20px;
+    }
+     #clientesl .empresas .logo1{
+      width: 85%;
+      height:185px;
+      margin-top: 20px;
+    }
+
+
+    #clientepu h1{
+      font-size: 45px;
+    }    
+
+    #servicios #filaser{
+      width: 50%;
+      padding:10px;
+    }
+    
+}
+
+@media screen and (max-width: 771px){
+    .hero { 
+      width: 771px; 
+    }  
+
+    #myNavbar a{
+      font-size: 10px;
+    }    
+    #contbarra{
+      width:100%;display: inline-block;
+    }
+    #barra{
+      width: 100%;
+    }
+    
+    #mision{
+      width:771px;
+      padding-left: 0;
+    }
+
+    #circulo{
+      padding: 2px;
+      box-sizing: border-box;
+    }
+
+    #publicidad{
+      width: 100%;
+    }
+
+    #titulomi{
+      font-size: 27px;
+      height: 1px;
+      margin-top: 0;
+    }
+
+    #misionizquierda{
+      width: 70%;
+      padding: 0;
+      box-sizing: border-box;
+      height:500px;
+      padding-bottom: 0;
+      border:1px solid #222;
+      margin-left: 0px;
+    }
+
+    #misionderecha{
+       width: 100%;
        padding-left: 0px;
     }
 
@@ -843,7 +1221,7 @@ a{
     }
     
     #dentroform #formContacto #enviar{
-      padding-left: 93px;
+      padding-left: 20px;
     }
 
     #formd{
@@ -860,11 +1238,11 @@ a{
 
     #formc1{
       width:70%;
-      margin-left: 125px;
+      margin-left: 90px;
     }
     #formd1{
       width:70%;
-       margin-left: 130px;
+       margin-left: 90px;
        height: 400px;
 
     }
@@ -882,24 +1260,28 @@ a{
     #clientesl #nombrecliente #imno{
       height: 42px;
     }
-    
+    #cont{
+      width: 80%;
+    }
     #forme{
       margin-bottom: 0;
       height: 200px;
     }
 
     #clientesl .empresas{
-      width: 100%;
+      width: 30%;
+      display: inline-block;
+     
     }
 
     #clientesl .empresas .logo{
-      width: 35%;
-      height:290px;
+      width: 85%;
+      height:160px;
        margin-top: 20px;
     }
      #clientesl .empresas .logo1{
-      width: 35%;
-      height:290px;
+      width: 85%;
+      height:160px;
       margin-top: 20px;
     }
 
@@ -909,7 +1291,7 @@ a{
     }    
 
     #servicios #filaser{
-      width: 50%;
+      width: 100%;
       padding:10px;
     }
     
