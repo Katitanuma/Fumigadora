@@ -34,7 +34,7 @@
 		            <span style="border:1px solid #eee" class="icon-bar"></span>
 		            <span style="border:1px solid #eee" class="icon-bar"></span>
 		          </button>
-		          <a class="navbar-brand" style="color:#70F4F2;font-size:12pt" ><strong>LIMPIEZA Y FUMIGACIONES BRILLOS Y MÁS</strong></a>
+		          <a class="navbar-brand" style="color:#eee;font-size:12pt;border-right: 1px solid #eee;" ><strong>LIMPIEZA Y FUMIGACIONES BRILLOS Y MÁS</strong></a>
 		        </div>
 		        <div id="navbar" class="collapse navbar-collapse">
 		          <ul class="nav navbar-nav">
@@ -93,10 +93,10 @@
 				<div class="item slides active">
 			      <div class="slide-1"></div>
 			      <div class="hero">
-			        <hgroup class="letras">
-			            <h1 style="color:#0C186E">FUMIGADORA Y LIMPIEZA</h1>
-			            <h1 style="color:#0C186E">BRILLOS Y MÁS</h1>       
-			            <h2 style="font-size: 24pt;color:#0C186E">¡Lo mejor de la zona sur!</h2>
+			        <hgroup class="letras" style="font-size: 15pt;">
+			            <h1 style="color:#0C186E;">Fumigadora y Limpieza</h1>
+			            <h1 style="color:#0C186E">Brillos y Más</h1>       
+			            <h2 style="font-size: 16pt;color:#0C186E">¡Lo mejor de la zona sur!</h2>
 			        </hgroup>
 			      </div>
 			    </div>
@@ -104,10 +104,10 @@
 			    <div class="item slides">
 			      <div class="slide-2"></div>
 			      <div class="hero">        
-			        <hgroup class="letras">
-			            <h1>LOS MEJORES SERVICIOS</h1>  
-			            <h1>QUE PODRÁS TENER</h1>      
-			            <h2 style="font-size: 24pt;">¡Sólo en nuestra empresa!</h2>
+			        <hgroup class="letras" style="font-size: 15pt;">
+			            <h1>Los mejores servicios</h1>  
+			            <h1>que podrás tener</h1>      
+			            <h2 style="font-size: 16pt;">¡Sólo en nuestra empresa!</h2>
 			        </hgroup>       
 			      </div>
 			    </div>
@@ -115,8 +115,8 @@
 			    <div class="item slides">
 			      <div class="slide-3"></div>
 			      <div class="hero">        
-			        <hgroup class="letras">
-			            <h1>CONTÁCTANOS</h1>        
+			        <hgroup class="letras" style="font-size: 15pt;">
+			            <h1>Contáctanos</h1>        
 			            <h2 style="font-size: 16pt">Estamos ubicados en Barrio El Estadio,</h2>
 			            <h2 style="font-size: 16pt">de la ENEE una cuadra al sur, </h2>
 			            <h2 style="font-size: 16pt">y tres cuadras al oeste</h2>
@@ -126,12 +126,15 @@
 			  </div>
 			</div>
 		
-			<article class="jumbotron text-center" style="opacity:0.8;margin-bottom:0">
+			<article id="textosomos" class="jumbotron text-center" style="opacity:0.8;margin-bottom:0">
 				<section style="width:87%;display: inline-block;text-align: center;vertical-align: top;font-family: 'Dosis';color:#047311;padding: 20px;background:#E4E4E4">
 					<strong><h1>¿QUIÉNES SOMOS?</h1></strong>
 					<br>
 					{% for s in somos %}
-						<h2 style="font-size: 26pt;text-align: justify" >{{s.texto}}</h2>
+					<div id="ts" style="font-size: 26pt;text-align: justify">
+						<h2>{{s.texto}}</h2>
+					</div>
+						
 					{% endfor %}
 				</section>	
 				<br>
@@ -147,7 +150,7 @@
 				<strong><h1 id="titulomi" style="color:#0C2679;margin-bottom:15px">MISIÓN</h1></strong>
 					{% for m in mision %}
 					<div id="cuerpomi" style="font-size: 18pt;text-align: justify;margin-left: 5px;margin-bottom:40px;margin-top:50px">
-						<section>{{m.texto}}</section>
+						<section id="tm">{{m.texto}}</section>
 					</div>						
 					{% endfor %}
 				</div>
@@ -175,7 +178,7 @@
 						<br>
 						{% for v in vision %}
 							<div id="cuerpomi" style="font-size: 21pt;text-align: justify;">
-								<section>{{v.texto}}</section>
+								<section id="tv" >{{v.texto}}</section>
 							</div>							
 						{% endfor %}
 						<br>
@@ -184,19 +187,19 @@
 			</div>
 		</div>
 
-		<div id="servicios" class="jumbotron text-center" style="margin-top: 0;margin-bottom:0;opacity:0.9;display: inline-block;vertical-align: top;padding-top: 30px;padding-bottom: 90px;font-family: 'Dosis'">
+		<div id="servicios" class="jumbotron text-center" style="margin-top: 0;margin-bottom:0;opacity:0.9;display: inline-block;vertical-align: top;padding-top: 30px;padding-bottom: 90px;font-family: 'Dosis';color:#eee;">
 			<div style="padding: 80px">
-				<h1 style="color:#eee;'font-family: 'Dosis';">NUESTROS SERVICIOS</h1>
+				<h1>NUESTROS SERVICIOS</h1>
 				<br><br><br>				
 				{% for l in listado_servicios %}	
 					<div id="filaser" class="col-sm-4 col-md-4" style="display: inline-block">
-					    <div id="tra" class="thumbnail" style="padding:10px;padding-bottom: 40px">
-					    	 <div class="caption">
-					            <h3 style="height:90px;font-size: 24pt;color:#132772">{{l}}</h3>
+					    <div id="tras" class="thumbnail" style="padding:10px;padding-bottom: 40px">
+					    	 <div id="tratext" class="caption" style="height:90px;font-size: 24pt;color:#132772">
+					            <h3>{{l}}</h3>
 					         </div>
 					         <center>
 					         	<a href="{{ l.imagen.url }}" target="_blank">
-						    	  <div id="imgservi" style="width:300px;height:180px;display:inline-block">
+						    	  <div id="imgservi" style="display:inline-block">
 						    	  	<img id="imgs" style="width:100%;height: 100%;box-shadow: 2px 4px 7px rgba(0,0,0,.85);border-radius:5px" src="{{ l.imagen.url }}" alt="">
 						    	  </div>				          					         
 						        </a>
@@ -216,7 +219,9 @@
 					{% regroup fotos by area as listado_areas %}
 					<div>
 						{% for area in listado_areas %}
-							<h2 style="font-size:32pt"><strong>{{ area.grouper }}</strong></h2>
+							<div id="textfumi" style="font-size:32pt">
+								<h2 ><strong>{{ area.grouper }}</strong></h2>
+							</div>							
 							<br>
 							<div style="width:100%;display: inline-block;text-align:center">
 								{% for foto in area.list %}
@@ -242,10 +247,15 @@
 			<div>
 				<div id="relaciones" class="col-md-6 jumbotron text-center" style="opacity:0.9;display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#10791C;padding: 10px;padding-bottom: 11px;height:450px">
 					<section style="width:85%;display: inline-block;text-align: center;vertical-align: top;font-family: 'Dosis';color:#222;margin-bottom:0;padding-top: 20px;">
-						<h1 style="color:#199013;font-size: 30pt" >LAS RELACIONES SON IMPORTANTES ...</h1>
-						<h2 style="font-size: 30pt;display:inline-block">Brindamos satisfacción a </h2>
-						<h2 style="font-size: 26pt;display:inline-block;color:#141E59"><strong> NUESTROS AMIGOS</strong></h2>
-						<h2 style="font-size: 26pt;display:inline-block">a travéz de un trabajo impecable y dedicación, en lo que hacemos.</h2>
+						<div id="h1" style="color:#199013;font-size: 30pt">
+							<h1>LAS RELACIONES SON IMPORTANTES ...</h1>
+						</div>
+						<div id="h2" style="font-size: 26pt;display:inline-block">
+							<h2 >Brindamos satisfacción a </h2>
+							<h2 style="color:#141E59"><strong> NUESTROS AMIGOS</strong></h2>
+							<h2>a travéz de un trabajo impecable y dedicación, en lo que hacemos.</h2>
+						</div>
+						
 					</section>	
 				</div>
 				<div id="clientepu" class="col-md-6 jumbotron text-center" style="opacity:0.9;display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#0B0E49;padding: 120px;padding-bottom:0;height:450px">
@@ -263,36 +273,43 @@
 						
 						{% for l in listado_clientes %}						
 							<div id="nombrecliente" class="col-md-4 border rounded-top text-justify">
-								<div id="imno" style="color:#222">		
-									<img style="width:25px;display:inline-block;padding-bottom: 20px;margin-right: 4px" src="{% static 'img/check.png' %}" alt="">     	
-								    <h3 style="height:80px;display:inline-block;font-size: 17pt" ><strong>{{ l }}</strong></h3>	      
+								<div id="imno" style="color:#222">	
+									<div id="imnoimg" style="width:25px;display:inline-block;padding-bottom: 20px;margin-right: 4px">
+										<img style="width:100%;"src="{% static 'img/check.png' %}" alt=""> 
+									</div>										
+									<div style="height:100px;display:inline-block;font-size: 17pt">
+										<h3><strong>{{ l }}</strong></h3>
+									</div>	
+								   	      
 							   	</div>
 							</div>						
 						{% endfor %}
 					</div>
 				</center>
-				<br><br>
-				<div class="col-md-12">
-					<div class="col-md-2 empresas">
-						<img class="logo" src="{% static 'img/unimall.png' %}" alt="">
-					</div>
-					<div class="col-md-2 empresas">
-						<img class="logo1" src="{% static 'img/unicines.jpg' %}" alt="">
-					</div>
-					<div class="col-md-2 empresas">
-						<img class="logo" src="{% static 'img/uniplaza.jpg' %}" alt="">
-					</div>
-					<div class="col-md-2 empresas">
-						<img class="logo1" src="{% static 'img/pizza.jpeg' %}" alt="">
-					</div>
-					<div class="col-md-2 empresas">
-						<img class="logo" src="{% static 'img/intrefica.jpg' %}" alt="">
-					</div>
-					<div class="col-md-2 empresas">
-						<img class="logo1" src="{% static 'img/kfc.jpg' %}" alt="">
-					</div>		
-				</div>	
 			</div>
+				<br><br>
+			
+
+			
+					<div class="col-md-2" id="empresas">
+						<img style="width:100%" class="logo" src="{% static 'img/unimall.png' %}" alt="">
+					</div>
+					<div class="col-md-2" id="empresas">
+						<img style="width:100%" class="logo1" src="{% static 'img/unicines.jpg' %}" alt="">
+					</div>
+					<div class="col-md-2" id="empresas">
+						<img style="width:100%" class="logo" src="{% static 'img/uniplaza.jpg' %}" alt="">
+					</div>
+					<div class="col-md-2" id="empresas">
+						<img style="width:100%" class="logo1" src="{% static 'img/pizza.jpeg' %}" alt="">
+					</div>
+					<div class="col-md-2" id="empresas">
+						<img style="width:100%" class="logo" src="{% static 'img/intrefica.jpg' %}" alt="">
+					</div>
+					<div class="col-md-2" id="empresas">
+						<img style="width:100%" class="logo1" src="{% static 'img/kfc.jpg' %}" alt="">
+					</div>		
+		
 		</div>
 
 
@@ -368,11 +385,19 @@
 		
 					<div id="personalde" class="col-md-5 jumbotron text-center" style="display: inline-block;vertical-align: top;margin-bottom:0;margin-top:0;font-family:'Dosis';color:#0B0E49;padding: 100px;padding-top:0;">
 						<section id="textoem" style="display: inline-block;text-align: center;vertical-align: top;font-family: 'Dosis';color:#222;margin-bottom:0;text-align: justify;margin-top:0">
-							<h1 style="color:#199013;font-size: 24pt;display:inline-block">NUESTROS EMPLEADOS </h1>
-							<h3 style="font-size: 18pt;display:inline-block">Están preparados para ofrecerte un servicio de calidad, cada uno, cuenta con las habilidades y valores que se necesitan para otorgarte los mejores resultados y que nuestra relación sea la mejor.</h3>
+							<div style="color:#199013;font-size: 24pt;display:inline-block">
+								<h2 >NUESTROS EMPLEADOS </h2>
+							</div>
+							<div style="font-size: 18pt;display:inline-block">
+								<h3 >Están preparados para ofrecerte un servicio de calidad, cada uno, cuenta con las habilidades y valores que se necesitan para otorgarte los mejores resultados y que nuestra relación sea la mejor.</h3>
+							</div>
 							<hr>
-							<h1 style="font-size: 24pt;color:#141E59;display:inline-block">NUESTRO EQUIPO</h1>
-							<h3 style="font-size: 18pt;display:inline-block">Contamos con una variedad de equipos, que son utilizados en cada uno de los servicios que ofrecemos. Entre ellos: Máquina Lavadora de pisos, Pulidora de pisos, Bombas Termo-nebulizadoras, etc.</h3>
+							<div style="font-size: 24pt;color:#141E59;display:inline-block">
+								<h2 >NUESTRO EQUIPO</h2>
+							</div>
+							<div style="font-size: 18pt;display:inline-block">
+								<h3 >Contamos con una variedad de equipos, que son utilizados en cada uno de los servicios que ofrecemos. Entre ellos: Máquina Lavadora de pisos, Pulidora de pisos, Bombas Termo-nebulizadoras, etc.</h3>
+							</div>							
 						</section>	
 					</div>
 				</div>				
@@ -385,41 +410,40 @@
 					<h1> <i style="margin-right: 10px"class="glyphicon glyphicon-envelope"></i> CONTÁCTANOS</h1>
 					<h2>¡Déjanos tus datos y podrás solicitar nuestros servicios!</h2>
 				</div>
-				<div id="formd" class="col-md-6 text-center" style="padding:65px;padding-top:84px;padding-bottom: 92px;height:805px;">
-					<center class="jumbotron" style="border-radius: 10px;">
-						<div>
-							<h2><strong>FUMIGADORA Y LIMPIEZA</strong></h2>
-							<h2><strong>BRILLOS Y MÁS</strong></h2>
-							<img id="logoco" style="width:70%;margin-bottom;0" src="{% static 'img/logoil.png' %}" alt="">
+				<div id="formd" class="col-md-6 text-center" style="display:inline-block;padding:4%;height:805px;color:#111154;box-sizing: border-box">
+					<div id="ju" style="border-radius: 10px;background:#F5F5F5;height:90%;
+					padding:10%">
+						<h2><strong>FUMIGADORA Y LIMPIEZA</strong></h2>
+						<h2><strong>BRILLOS Y MÁS</strong></h2>
+						<div id="imagenlogo" style="width:70%;padding-left: 100px">
+							<img id="logoco" style="width:100%;margin-bottom;0" src="{% static 'img/logoil.png' %}" alt="">
 						</div>						
-						<div id="form1d" class="jumbotron" style="margin-top:0;padding-top: 20px;padding-bottom:120px;padding-left: 40px">
-							<div id="fd1" class="col-md-6" style="text-align: justify">
-								<dl style="font-size: 14pt">
-									<dt style="color:#141757">Ubicación:</dt>
-									<dd><p>Estamos ubicados en Barrio El Estadio, de la ENEE, una cuadra al sur, y tres cuadras al oeste.</p></dd>
-								</dl>
-							</div>
-							<div id="fd2" class="col-md-6" style="text-align: justify">
-								<dl style="font-size: 14pt">
-									<dt style="color:#141757">No. Teléfono Oficina: </dt>
-									<dd>(504) 8846-4290</dd>
-									<dt style="color:#141757">No. Teléfono Móvil: </dt>
-									<dd>(504) 8965-7460</dd>
-									<dt style="color:#141757">E-mail: </dt>
-									<dd>kleguma@yahoo.com</dd>
-								</dl>
-							</div>
-						</div>	
-					</center>						
+						<br><br><br>										
+					
+						<dl id="fd1" class="col-md-6" style="font-size: 14pt;text-align: justify;display:inline-block;vertical-align: top;padding-right: 10px;">
+							<dt style="color:#141757">Ubicación:</dt>
+							<dd><p>Estamos ubicados en Barrio El Estadio, de la ENEE, una cuadra al sur, y tres cuadras al oeste.</p></dd>
+						</dl>
+										
+						<dl id="fd2"  class="col-md-6" style="font-size: 14pt;text-align: left;display:inline-block;" >
+							<dt style="color:#141757">No. Teléfono Oficina: </dt>
+							<dd>(504) 8846-4290</dd>
+							<dt style="color:#141757">No. Teléfono Móvil: </dt>
+							<dd>(504) 8965-7460</dd>
+							<dt style="color:#141757">E-mail: </dt>
+							<dd>kleguma@yahoo.com</dd>
+						</dl>							
+					</div>						
 				</div>
 
-				<div id="formc" class="col-md-6 text-center" style="padding:80px;margin-bottom:0px;height: 804px;color:#0A0F4B;padding-top:85px;height:805px;">
-					<center class="jumbotron" style="border-radius: 10px;">					
+				<div id="formc" class="col-md-6 text-center" style="margin-bottom:0px;height: 804px;color:#0A0F4B;height:805px;padding:4%;padding-bottom: 2%;display:inline-block;box-sizing: border-box">
+					<div id="juc" style="border-radius: 10px;background:#F5F5F5;height:87%;
+					padding:10%">					
 							<h3 style="color: #CC8A16">CONTACTO</h3>
 							<h5>¡Escríbenos y solicita nuestros servicios!</h5>
 							<hr>
-							<div id="dentroform" class="text-justify" style="padding-left:65px;padding-right:40px">
-								<form style="width:90%" id="formContacto" action="{% url 'envio' %}" 
+							<div id="dentroform" class="text-justify">
+								<form style="width:100%" id="formContacto" action="{% url 'envio' %}" 
 								method="post" accept-charset="utf-8">
 									{% csrf_token %}
 									{{contacto.as_p}}
@@ -433,7 +457,7 @@
 							</div>	
 							<br>
 							<strong><p id="mensaje"> </p></strong>					
-					</center>
+					</div>
 				</div>							
 			</div>
 		</div>			
