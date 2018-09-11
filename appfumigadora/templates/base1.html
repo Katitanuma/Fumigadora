@@ -23,12 +23,15 @@
 	
 </head>
 <body background="{% static 'img/p2.jpg'%}">
+	<audio id="musica" autoplay="true" hidden="true" loop="true">
+	  <source src="{% static 'audio/mijares.mp3' %}">
+	</audio>
 	<div>	
 		<div id="contenbarra" style="width:100%;display:inline-block;">
 			<nav id="barra" class="navbar navbar-fixed-top" style="margin: 0">
 		      <div class="container">
 		        <div class="navbar-header">
-		          <button type="button" style="border:1px solid #eee;color:#eee;" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+		          <button id="btnExpandir" type="button" style="border:1px solid #eee;color:#eee;" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 		            <span class="sr-only">Toggle navigation</span>
 		            <span style="border:1px solid #eee" class="icon-bar"></span>
 		            <span style="border:1px solid #eee" class="icon-bar"></span>
@@ -463,8 +466,5 @@
 		</div>			
 
 	</div>
-	<audio autoplay="true" hidden="true" loop="true">
-	  <source src="{% static 'audio/mijares.mp3' %}">
-	</audio>
 </body>
 </html>
