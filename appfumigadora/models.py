@@ -62,7 +62,7 @@ class Foto(models.Model):
 	foto = models.ImageField(upload_to='Fotos')
 	area = models.ForeignKey(Area)
 
-	
+
 
 
 

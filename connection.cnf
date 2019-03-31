@@ -1,0 +1,5 @@
+[client]
+database = brillos_db
+user = root
+password = Jack2@19
+default-character-set = utf8
